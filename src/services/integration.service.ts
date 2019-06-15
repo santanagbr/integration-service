@@ -14,7 +14,7 @@ export default class IntegrationService {
 
     public async requestAndSaveData() {
         let users = await this.requestService.getUserData();
-        users = users.slice(0,50); // Descomentar se a máquina travar por excesso de dados.
+        // users = users.slice(0,50); // Descomentar se a máquina travar por excesso de dados.
 
         if (!users) throw new Error('Invalid users.');
 
